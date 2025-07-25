@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Organic Matcha - Produkty</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="cart.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <h1>Organic Matcha</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+    </nav>
+    <div class="lang-switcher">
+      <button onclick="setLanguage('pl')">PL</button>
+      <button onclick="setLanguage('en')">EN</button>
+    </div>
+    <div class="cart-icon" id="cart-icon">🛒 <span id="cart-count">0</span></div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2 data-lang-pl="Nasze Produkty" data-lang-en="Our Products">Nasze Produkty</h2>
+      <p class="lead"
+   data-lang-pl="Wybierz spośród naszej starannie wyselekcjonowanej oferty organicznych herbat matcha"
+   data-lang-en="Choose from our carefully selected range of organic matcha teas.">
+   Wybierz spośród naszej starannie wyselekcjonowanej oferty organicznych herbat matcha
+</p>
+
+    </section>
+
+    <section class="product-list">
+      <div class="product">
+        <img src="images/matcha-premium.jpg" alt="Matcha Premium">
+        <div class="product-info">
+          <h3 data-lang-pl="Matcha Premium" data-lang-en="Matcha Premium">Matcha Premium</h3>
+          <p data-lang-pl="Najwyższej jakości japońska matcha prosto z Kioto." data-lang-en="Top quality Japanese matcha directly from Kyoto.">Najwyższej jakości japońska matcha prosto z Kioto.</p>
+          <div class="price">79.99</div>
+          <button class="buy-btn" data-name="Matcha Premium" data-lang-pl="Kup teraz" data-lang-en="Buy Now">Kup teraz</button>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="images/matcha-latte-mix.jpg" alt="Matcha Latte Mix">
+        <div class="product-info">
+          <h3 data-lang-pl="Matcha Latte Mix" data-lang-en="Matcha Latte Mix">Matcha Latte Mix</h3>
+          <p data-lang-pl="Mieszanka matchy i mleka w proszku — idealna na poranki." data-lang-en="A mix of matcha and milk powder — perfect for mornings.">Mieszanka matchy i mleka w proszku — idealna na poranki.</p>
+          <div class="price">49.99</div>
+          <button class="buy-btn" data-name="Matcha Latte Mix" data-lang-pl="Kup teraz" data-lang-en="Buy Now">Kup teraz</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>&copy; 2025 Organic Matcha. All rights reserved.</footer>
+
+  <div id="cart-modal" class="cart-modal">
+    <h3 data-lang-pl="Twój koszyk" data-lang-en="Your Cart">Twój koszyk</h3>
+    <ul id="cart-items"></ul>
+    <p id="cart-total">Suma: 0 zł</p>
+    <button id="checkout-btn" data-lang-pl="Zamów" data-lang-en="Checkout">Zamów</button>
+    <button id="close-cart-btn">×</button>
+  </div>
+</body>
+</html>
