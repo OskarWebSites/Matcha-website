@@ -1,9 +1,0 @@
-/matcha-site
-├── index.html         ✅ strona główna
-├── products.html      ✅ nowa podstrona z produktami
-├── styles.css         ✅ wspólny plik CSS
-└── images/
-    ├── hero.jpg
-    ├── product1.jpg
-    └── product2.jpg
-
