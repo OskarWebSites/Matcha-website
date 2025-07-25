@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Organic Matcha - Home</title>
+<link href="styles.css" rel="stylesheet"/>
+<script defer="" src="cart.js"></script>
+</head>
+<body>
+<header class="header">
+<h1>Organic Matcha</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a data-lang-en="Contact" data-lang-pl="Kontakt" href="#contact">Kontakt</a></nav>
+<div class="lang-switcher">
+<button onclick="setLanguage('pl')">PL</button>
+<button onclick="setLanguage('en')">EN</button>
+</div>
+
+</header>
+<main class="container">
+<section class="hero">
+<h2 data-lang-en="Authentic Japanese Matcha" data-lang-pl="Naturalna Japońska Matcha">Naturalna Japońska Matcha</h2>
+<p data-lang-en="Discover the unique flavor and health benefits of our organic Japanese matcha." data-lang-pl="Odkryj wyjątkowy smak i korzyści zdrowotne naszej organicznej matchy z Japonii.">Odkryj wyjątkowy smak i korzyści zdrowotne naszej organicznej matchy z Japonii.</p>
+<a class="btn" data-lang-en="View Products" data-lang-pl="Zobacz Produkty" href="products.html">Zobacz Produkty</a>
+</section>
+
+<section class="about">
+<h2 data-lang-en="About us" data-lang-pl="O nas">O nas</h2>
+<p data-lang-en="We are a modern company offering the highest quality services. Our goal is to create simple and functional solutions that make a difference." data-lang-pl="Jesteśmy nowoczesną firmą oferującą najwyższej jakości usługi. Naszym celem jest tworzenie prostych i funkcjonalnych rozwiązań, które robią różnicę.">
+     Jesteśmy nowoczesną firmą oferującą najwyższej jakości usługi. Naszym celem jest tworzenie prostych i funkcjonalnych rozwiązań, które robią różnicę.
+  </p>
+</section>
+<section class="gallery">
+<img alt="Galeria Matcha" src="alice-pasqual-A2qkFZ6Tqk0-unsplash.jpg"/>
+<img alt="Galeria Matcha" src="sentidos-humanos-QAYLR4oSK6Q-unsplash.jpg"/>
+<img alt="Galeria Matcha" src="jason-leung-a6tKN9LfuV8-unsplash.jpg"/>
+<img alt="Galeria Matcha" src="matcha-co-pC16vUGYCL4-unsplash.jpg"/>
+</section>
+<section class="contact" id="contact">
+<h2 data-lang-en="Contact" data-lang-pl="Kontakt">Kontakt</h2>
+<p data-lang-en="Get in touch with us at: contact@organicmatcha.pl" data-lang-pl="Skontaktuj się z nami pod adresem email: kontakt@organicmatcha.pl">
+     Skontaktuj się z nami pod adresem email: kontakt@organicmatcha.pl
+  </p>
+</section>
+</main>
+<footer>© 2025 Organic Matcha. Wszelkie prawa zastrzeżone.</footer>
+
+<script>
+    function setLanguage(lang) {
+      const elements = document.querySelectorAll('[data-lang-' + lang + ']');
+      elements.forEach(el => {
+        el.textContent = el.getAttribute('data-lang-' + lang);
+      });
+    }
+    </script></body>
+</html>
